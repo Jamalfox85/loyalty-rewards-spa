@@ -1,11 +1,11 @@
-describe('My First Test', function () {
+describe("Main", function () {
   before((browser) => {
-    browser.init()
-  })
+    browser.init();
+  });
 
-  it('visits the app root url', function () {
-    browser.assert.textContains('h1', 'You did it!')
-  })
+  it("Home View", function () {
+    browser.assert.textContains("h1", "Test");
+  });
 
-  after((browser) => browser.end())
-})
+  after((browser) => browser.end());
+});
